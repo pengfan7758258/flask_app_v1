@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Login | Simplify</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/master.css') }}">
+</head>
+<body>
+
+<div class="login-box">
+    <img src="{{ url_for('static', filename='img/logo.jpeg') }}" class="avatar" alt="Avatar Image">
+    <h1>Login Here</h1>
+    <form action="{{ url_for('blue.login') }}" method="post">
+        <!-- USERNAME INPUT -->
+        <label for="username">Username</label>
+        <input type="text" name="username" placeholder="Enter Username">
+        <!-- PASSWORD INPUT -->
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Enter Password">
+        <input type="submit" value="Log In">
+        {#        <a href="#">Lost your Password?</a><br>#}
+        {#        <a href="#">Don't have An account?</a>#}
+    </form>
+</div>
+</body>
+</html>
